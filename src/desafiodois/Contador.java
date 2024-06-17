@@ -3,7 +3,6 @@ package desafiodois;
 import java.util.Scanner;
 
 public class Contador {
-
 	public static void main(String[] args) {
 		Scanner leitor = new Scanner(System.in);
 		System.out.print("Digite o primeiro parâmetro: ");
@@ -20,7 +19,7 @@ public class Contador {
 	
 	static void contar(int parametroUm, int parametroDois ) throws ParametrosInvalidosException {
 		if(parametroUm > parametroDois) {
-			throw new ParametrosInvalidosException(parametroUm, parametroDois);
+			throw new ParametrosInvalidosException();
 		}
 		
 		int contagem = parametroDois - parametroUm;
